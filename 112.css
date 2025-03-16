@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    background-image: url('photo_2025-03-16_20-08-04.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: #f0f0f0; 
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background: #6f6f6f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+header nav ul {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    position: relative;
+    float: left;
+}
+
+header nav ul li a {
+    padding: 15px;
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    border: 1px #0000 solid ;
+}
+
+header nav ul li a:hover {
+    background: #444444;
+    border: 1px #000 solid ;
+}
+
+header nav ul li ul {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    background: #6f6f6f;
+    padding: 0;
+}
+
+header nav ul li ul li {
+    width: 100%;
+}
+
+header nav ul li ul li ul {
+    left: 100%;
+    top: 0;
+}
+
+header nav ul li:hover > ul {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+}
